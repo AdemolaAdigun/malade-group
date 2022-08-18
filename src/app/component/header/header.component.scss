@@ -1,0 +1,48 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+
+  .left-header {
+    display: flex;
+    margin-left: 100px;
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+    }
+  }
+
+  .right-header {
+    display: flex;
+    margin-right: 100px;
+
+    a {
+        margin: 10px;
+    }
+  }
+}
+
+// Tablets (phones, 600px and down)
+@media only screen and (max-width: 820px) {
+	#header {
+      
+        .left-header {
+            margin-left: 20px;
+        }
+      
+        .right-header {
+            margin-right: 20px;
+
+          a {
+            display: none;
+          }
+
+          .header-menu {
+            display: flex;
+          }
+        }
+    }
+}
