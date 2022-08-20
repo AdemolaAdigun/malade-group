@@ -1,1 +1,168 @@
-<p>home works!</p>
+<div class="navigation-wrapper">
+  <div class="keen-slider keen-slider--vertical" #sliderRef>
+    <div class="keen-slider__slide number-slide1">
+      <h1>MALADE GROUP OF <br/>COMPANIES</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+        laboriosam sit, enim molestiae quisquam earum eveniet vero ullam labore?
+        Fugiat quam ipsum accusantium. Sit deleniti neque fugiat sequi
+        dignissimos sed.
+      </p>
+      <button>Contact Us</button>
+      <img src="../../../assets/images/slide1.png" placeholder="Slider" />
+    </div>
+    <div class="keen-slider__slide number-slide2">
+      <h1>MALADE GROUP OF <br/>COMPANIES</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+        laboriosam sit, enim molestiae quisquam earum eveniet vero ullam labore?
+        Fugiat quam ipsum accusantium. Sit deleniti neque fugiat sequi
+        dignissimos sed.
+      </p>
+      <button>Contact Us</button>
+      <img src="../../../assets/images/slide2.png" placeholder="Slider" />
+    </div>
+    <div class="keen-slider__slide number-slide3">
+      <h1>MALADE GROUP OF <br/>COMPANIES</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+        laboriosam sit, enim molestiae quisquam earum eveniet vero ullam labore?
+        Fugiat quam ipsum accusantium. Sit deleniti neque fugiat sequi
+        dignissimos sed.
+      </p>
+      <button>Contact Us</button>
+      <img src="../../../assets/images/slide3.png" placeholder="Slider" />
+    </div>
+  </div>
+  <svg
+    [ngClass]="
+      'arrow arrow--left ' + (currentSlide === 0 ? 'arrow--disabled' : '')
+    "
+    (click)="slider.prev()"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+    />
+  </svg>
+  <svg
+    *ngIf="slider"
+    [ngClass]="
+      'arrow arrow--right ' +
+      (slider.track.details.slides.length - 1 === currentSlide
+        ? 'arrow--disabled'
+        : '')
+    "
+    (click)="slider.next()"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+  </svg>
+</div>
+<div class="dots">
+  <button
+    (click)="slider.moveToIdx(i)"
+    *ngFor="let slide of dotHelper; let i = index"
+    [class]="'dot ' + (i === currentSlide ? 'active' : '')"
+  ></button>
+</div>
+
+<div id="main-content">
+  <div class="investment">
+    <div class="left-image">
+      <img src="../../../assets/images/investment.png" alt="" />
+    </div>
+    <div class="right-content">
+      <h2>INVESTMENT</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus
+        laudantium, temporibus ad, quae earum, voluptates dolor est vitae quos
+        nostrum dolores necessitatibus? Suscipit nobis ipsa ea dolore deserunt
+        recusandae.
+      </p>
+      <button>Read More</button>
+    </div>
+  </div>
+  <div class="agriculture">
+    <div class="left-content">
+      <h2>AGRICULTURE</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus
+        laudantium, temporibus ad, quae earum, voluptates dolor est vitae quos
+        nostrum dolores necessitatibus? Suscipit nobis ipsa ea dolore deserunt
+        recusandae.
+      </p>
+      <button>Read More</button>
+    </div>
+    <div class="right-image">
+      <img src="../../../assets/images/agriculture.png" alt="" />
+    </div>
+  </div>
+  <div class="construction">
+    <div class="left-content">
+      <img src="../../../assets/images/construction.png" />
+    </div>
+    <div class="right-content">
+      <h2>BUILDING & <br />CONSTRUCTION</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus
+        laudantium, temporibus ad, quae earum, voluptates dolor est vitae quos
+        nostrum dolores necessitatibus? Suscipit nobis ipsa ea dolore deserunt
+        recusandae.
+      </p>
+      <button>Read More</button>
+    </div>
+  </div>
+  <div class="trading">
+    <div class="left-content">
+      <h2>TRADING & MERCHANDISING</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus
+        laudantium, temporibus ad, quae earum, voluptates dolor est vitae quos
+        nostrum dolores necessitatibus? Suscipit nobis ipsa ea dolore deserunt
+        recusandae.
+      </p>
+      <button>Read More</button>
+    </div>
+    <div class="right-content">
+      <img src="../../../assets/images/trad.png" />
+    </div>
+  </div>
+  <div class="investment">
+    <div class="left-content">
+      <h2>AIR-RE NIGERIA</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus
+        laudantium, temporibus ad, quae earum, voluptates dolor est vitae quos
+        nostrum dolores necessitatibus? Suscipit nobis ipsa ea dolore deserunt
+        recusandae.
+      </p>
+      <button>Read More</button>
+    </div>
+    <div class="right-image">
+      <img src="../../../assets/images/air.png" alt="" />
+    </div>
+  </div>
+</div>
+<div class="title">
+    <h2>BUSINESSES</h2>
+</div>
+<div id="businesses">
+  <div class="business">
+    <img src="../../../assets/images/MG/Rectangle 142.png" />
+  </div>
+  <div class="business">
+    <img src="../../../assets/images/MG/Rectangle 143.png" />
+  </div>
+  <div class="business">
+    <img src="../../../assets/images/MG/Rectangle 144.png" />
+  </div>
+  <div class="business">
+    <img src="../../../assets/images/MG/Rectangle 146.png" />
+  </div>
+  <div class="business">
+    <img src="../../../assets/images/MG/Rectangle 147.png" />
+  </div>
+</div>
