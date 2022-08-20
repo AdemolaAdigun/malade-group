@@ -105,6 +105,7 @@
     height: 455px;
     background-color: #d87d48;
     border-radius: 10px;
+    justify-content: space-between;
 
     .left-image {
       img {
@@ -144,10 +145,11 @@
     }
 
     .right-image {
+        margin-right: 55px;
       img {
         max-width: 100%;
         height: 345px;
-        margin: 55px;
+        margin-top: 55px;
       }
     }
 
@@ -189,19 +191,22 @@
     height: 455px;
     background-color: #f1f1f1;
     border-radius: 10px;
+    justify-content: space-between;
 
     .right-image {
+        margin-top: 40px;
+        margin-right: 55px;
+
       img {
         max-width: 100%;
-        height: 345px;
-        margin: 55px;
+        height: 380px;
       }
     }
 
     .left-content {
       max-width: 55%;
-      margin-top: 75px;
       margin-left: 50px;
+      margin-top: 50px;
 
       h2 {
         font-size: 40px;
@@ -230,11 +235,18 @@
 
   .construction {
     margin-top: 40px;
+    margin-left: 50px;
     display: flex;
     justify-content: space-between;
 
     .left-content {
-      margin-left: 100px;
+      margin-left: 50px;
+      margin-right: 20px;
+
+      img {
+        max-width: 100%;
+        height: 380px;
+      }
     }
 
     .right-content {
@@ -273,18 +285,20 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
 
     .right-content {
-      margin-right: 100px;
+        margin-right: 55px;
       img {
-        width: 600px;
-        height: 345px;
+        max-width: 100%;
+        height: 380px;
       }
     }
 
     .left-content {
-      max-width: 40%;
-      margin-left: 100px;
+        margin-left: 55px;
+      max-width: 445px;
 
       h2 {
         padding-top: 10px;
@@ -312,18 +326,18 @@
 }
 
 .title {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 100px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 #businesses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
 
-    .business {
-        margin: 20px;
-    }
+  .business {
+    margin: 20px;
+  }
 }

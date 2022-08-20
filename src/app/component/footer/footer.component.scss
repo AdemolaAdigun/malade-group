@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   height: auto;
+  background-color: #191919;
+  color: #fff;
 
   .left-footer {
     display: block;
@@ -24,6 +26,7 @@
     margin-right: 100px;
     a {
       margin: 10px;
+      color: #fff;
     }
 
     .footer-menu {
