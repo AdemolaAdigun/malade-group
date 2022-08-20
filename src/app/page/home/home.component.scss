@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 455px;
+  height: 600px;
 
   img {
     max-width: 100%;
@@ -240,7 +240,7 @@
     justify-content: space-between;
 
     .left-content {
-      margin-left: 50px;
+      margin-left: 110px;
       margin-right: 20px;
 
       img {
@@ -340,5 +340,6 @@
   .business {
     margin: 20px;
     text-align: center;
+    cursor: pointer;
   }
 }
