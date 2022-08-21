@@ -1,0 +1,42 @@
+#contact-us {
+  display: flex;
+
+  .left {
+    margin: 100px;
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .right {
+    margin: 55px;
+
+    .top {
+        margin-top: 20px;
+    }
+
+    .middle {
+        display: flex;
+        margin-top: 20px;
+        
+        img {
+            margin: 10px;
+        }
+    }
+
+    .bottom {
+        margin-top: 10px;
+    }
+
+    span {
+      display: flex;
+
+      img {
+        margin-right: 10px;
+        max-width: 30px;
+      }
+    }
+  }
+}
